@@ -11,7 +11,8 @@ This project performs a comprehensive geospatial audit of Master Planned Unit De
 To ensure the integrity of the audit and maintain a defensible record of data commits, I developed a custom **Python-based Data Governance tool** embedded within the QGIS environment.
 
 ### **1. Research & Logic Development**
-![Code Research](images/code_research.PNG)
+![Code Research](<img width="1279" height="761" alt="code research" src="https://github.com/user-attachments/assets/734ab590-243b-4edd-b09f-09c9cdfcd818" />
+)
 *Utilizing the Python `datetime` and `os` libraries to build a localized auditing logic that avoids the security risks of hard-coded credentials.*
 
 ### **2. System Integration**
