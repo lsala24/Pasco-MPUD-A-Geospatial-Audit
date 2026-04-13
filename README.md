@@ -11,15 +11,18 @@ This project performs a comprehensive geospatial audit of Master Planned Unit De
 To ensure the integrity of the audit and maintain a defensible record of data commits, I developed a custom **Python-based Data Governance tool** embedded within the QGIS environment. This system transitions the workflow from manual technician entry to automated analyst-level oversight.
 
 ### **1. Research & Logic Development**
-[INSERT PHOTO LINK HERE]
+<img width="1279" height="761" alt="code research" src="https://github.com/user-attachments/assets/0f1db3b2-fad6-497b-b2a9-e4b7b5346e2a" />
+
 *Utilizing the Python `datetime` and `os` libraries to build a localized auditing logic. This phase involved researching the PyQGIS API to ensure the script could operate silently in the background without interrupting the primary spatial analysis.*
 
 ### **2. System Integration**
-[INSERT PHOTO LINK HERE]
+<img width="1280" height="761" alt="Setting up project macros in properties" src="https://github.com/user-attachments/assets/1a32c80d-1a7f-4828-999e-9e5738598e28" />
+
 *The script is integrated via QGIS Project Macros as an "Event Listener." It is designed to trigger automatically upon every project save, capturing critical metadata including timestamps and project paths to ensure accountability across the project lifecycle.*
 
 ### **3. External Audit Trail**
-[INSERT PHOTO LINK HERE]
+<img width="1280" height="763" alt="external save successfull" src="https://github.com/user-attachments/assets/28d446bd-610d-4f09-85e5-a33b092946e9" />
+
 *The final implementation generates a persistent, external `.txt` log. This ensures that even if the project file is moved or shared, a permanent record of data commits remains accessible for QA/QC and regulatory reporting.*
 
 ## Technical Objectives
