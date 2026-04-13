@@ -8,22 +8,22 @@
 This project performs a comprehensive geospatial audit of Master Planned Unit Developments (MPUDs) within Pasco County, Florida. By synthesizing historical planning records with modern spatial data, this audit evaluates zoning compliance, land use efficiency, and the long-term infrastructure impacts of large-scale residential and commercial developments.
 
 ## 🛠️ Automation & Data Governance (PyQGIS)
-To ensure the integrity of the audit and maintain a defensible record of data commits, I developed a custom **Python-based Data Governance tool** embedded within the QGIS environment.
+To ensure the integrity of the audit and maintain a defensible record of data commits, I developed a custom **Python-based Data Governance tool** embedded within the QGIS environment. This system transitions the workflow from manual technician entry to automated analyst-level oversight.
 
 ### **1. Research & Logic Development**
+<img width="1279" height="761" alt="code research" src="https://github.com/user-attachments/assets/ac390fa5-6f31-4889-a8bc-558e424f5098" />
 
-*Code Research: Utilizing the Python `datetime` and `os` libraries to build a localized auditing logic that avoids the security risks of hard-coded credentials.*
-
-<img width="1279" height="761" alt="code research" src="https://github.com/user-attachments/assets/b913d53d-4dd5-48fe-8ae1-a5371adf35a6" />
-
+*Utilizing the Python `datetime` and `os` libraries to build a localized auditing logic. This phase involved researching the PyQGIS API to ensure the script could operate silently in the background without interrupting the primary spatial analysis.*
 
 ### **2. System Integration**
-![Setting up Macros](images/Setting_up_project_macros_in_properties.PNG)
-*Integrating the script via QGIS Project Macros. This "Event Listener" automatically triggers every time a project save is initiated, capturing metadata without requiring manual technician input.*
+<img width="1280" height="761" alt="Setting up project macros in properties" src="https://github.com/user-attachments/assets/b90f0f14-8830-4210-a6fd-5c031e173cbc" />
+
+*The script is integrated via QGIS Project Macros as an "Event Listener." It is designed to trigger automatically upon every project save, capturing critical metadata including timestamps and project paths to ensure accountability across the project lifecycle.*
 
 ### **3. External Audit Trail**
-![Success Message](images/external_save_successfull.PNG)
-*The final output: A successful commit message in the Python console and a persistent, external `.txt` log that serves as a permanent paper trail of the audit's progress.*
+<img width="1280" height="763" alt="external save successfull" src="https://github.com/user-attachments/assets/d6c99f69-679b-4ec2-a1f7-64055d16e5b3" />
+
+*The final implementation generates a persistent, external `.txt` log. This ensures that even if the project file is moved or shared, a permanent record of data commits remains accessible for QA/QC and regulatory reporting.*
 
 ## Technical Objectives
 * **Zoning Compliance:** Auditing spatial boundaries of MPUDs against the Pasco County Comprehensive Plan.
